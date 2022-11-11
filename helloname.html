@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.4.0/purify.min.js"></script>
+    <title>Hello Name</title>
+  </head>
+  <body>
+    <h1>Bok! Kako ze zoveš?</h1>
+    <input type="text" id="ime" placeholder="ime ...not sanitized " />
+    <input type="text" id="prezime" placeholder="prezime ... sanitized :) " />
+    <br />
+    <br />
+    <button onclick="mojaFunkcija()">Potvrdi</button>
+    <h1 id="poruka"></h1>
+    <script src="./helloname.js"></script>
+  </body>
+</html>
