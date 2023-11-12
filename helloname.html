@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.4.0/purify.min.js"></script>
+    <title>Hello Name</title>
+  </head>
+  <body>
+    <h1>(1. kategorija) Bok! Kako ze zoveš?</h1>
+    <input type="text" id="ime" placeholder="ime ...not sanitized " />
+    <input type="text" id="prezime" placeholder="prezime ... sanitized :) " />
+    <br />
+    <br />
+    <button onclick="mojaFunkcija()">Potvrdi</button>
+    <h1 id="poruka"></h1>
+    <h1>(2. kategorija) Password Storage </h1>
+    <label for="username">Username:</label>
+    <input type="text" id="username" placeholder="Enter username..." />
+    <br />
+    <label for="password">Password:</label>
+    <input type="password" id="password" placeholder="Enter password..." />
+    <br />
+    <button onclick="storePassword()">Store Password</button>
+    <button onclick="toggleExposure()">Toggle Exposure</button>
+    <h2>Password List</h2>
+    <ul id="passwordList"></ul>
+    <script src="./helloname.js"></script>
+  </body>
+</html>
